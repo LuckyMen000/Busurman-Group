@@ -1,0 +1,329 @@
+/* Плавная прокрутка для всей страницы */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Подключаем шрифт напрямую в стили */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Оборачиваем все в специальный контейнер */
+#custom-taplink-wrapper {
+    /* --- ПРЕМИАЛЬНАЯ ПАЛИТРА --- */
+    --bg-color: #1C243D; /* Глубокий синий фон */
+    --text-main: #D7BE8A; /* Золотисто-бежевый для основного текста */
+    --text-accent: rgba(215, 190, 138, 0.6); /* Приглушенный золотистый для деталей */
+    --btn-bg: transparent; /* Прозрачный фон кнопок */
+    --btn-border: rgba(215, 190, 138, 0.4); /* Тонкие полупрозрачные рамки */
+    --btn-border-hover: #D7BE8A; /* Яркая рамка при наведении */
+    
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--bg-color); 
+    display: flex;
+    justify-content: center;
+    
+    margin: -15px; 
+    padding: 0;
+}
+
+#custom-taplink-wrapper .taplink-container {
+    width: 100%;
+    max-width: 480px; 
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    padding: 40px 20px 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+/* --- Анимации появления --- */
+#custom-taplink-wrapper .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+#custom-taplink-wrapper .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* А. Шапка */
+#custom-taplink-wrapper .header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#custom-taplink-wrapper .avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: transparent; 
+    margin: 0 auto 20px;
+    object-fit: cover;
+    border: 1px solid var(--text-main);
+    padding: 4px;
+}
+
+#custom-taplink-wrapper .logo-img {
+    max-width: 85%; 
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Б. Программы (Кнопки) */
+#custom-taplink-wrapper .link-btn {
+    display: flex;
+    align-items: center;
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    border-radius: 16px; 
+    padding: 18px 20px;
+    text-decoration: none;
+    color: var(--text-main);
+    transition: all 0.4s ease;
+}
+
+#custom-taplink-wrapper .link-btn:hover {
+    background-color: rgba(215, 190, 138, 0.05);
+    border-color: var(--btn-border-hover);
+    transform: translateY(-2px);
+}
+
+#custom-taplink-wrapper .btn-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--text-main);
+    margin-right: 18px;
+    flex-shrink: 0;
+}
+
+#custom-taplink-wrapper .btn-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#custom-taplink-wrapper .btn-title {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    text-transform: uppercase; 
+}
+
+#custom-taplink-wrapper .btn-subtitle {
+    font-size: 11px;
+    font-weight: 300;
+    color: var(--text-accent);
+    letter-spacing: 0.5px;
+}
+
+#custom-taplink-wrapper .btn-arrow {
+    width: 18px;
+    height: 18px;
+    fill: var(--text-accent);
+    transition: transform 0.3s;
+}
+
+#custom-taplink-wrapper .link-btn:hover .btn-arrow {
+    transform: translateX(4px);
+    fill: var(--text-main);
+}
+
+/* В. Расписание */
+#custom-taplink-wrapper .section-title {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px 0 10px;
+    color: var(--text-accent);
+}
+
+#custom-taplink-wrapper .schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#custom-taplink-wrapper .schedule-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    border-radius: 16px; 
+    padding: 16px 20px;
+    text-decoration: none;
+    color: var(--text-main);
+    transition: all 0.4s ease;
+}
+
+#custom-taplink-wrapper .schedule-item:hover {
+    background-color: rgba(215, 190, 138, 0.05);
+    border-color: var(--btn-border-hover);
+}
+
+#custom-taplink-wrapper .schedule-left {
+    display: flex;
+    flex-direction: column;
+    min-width: 95px;
+    padding-right: 15px;
+    border-right: 1px solid var(--btn-border);
+}
+
+#custom-taplink-wrapper .schedule-date {
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+#custom-taplink-wrapper .schedule-city {
+    font-size: 11px;
+    font-weight: 300;
+    color: var(--text-accent);
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+
+#custom-taplink-wrapper .schedule-right {
+    flex-grow: 1;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+#custom-taplink-wrapper .schedule-event {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+#custom-taplink-wrapper .schedule-details {
+    font-size: 11px;
+    font-weight: 300;
+    color: var(--text-accent); 
+    margin-top: 6px;
+    line-height: 1.4;
+}
+
+/* Г. Главная кнопка менеджера */
+#custom-taplink-wrapper .cta-manager {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--text-main);
+    color: var(--bg-color);
+    text-decoration: none;
+    padding: 22px 20px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+    transition: transform 0.2s;
+}
+
+#custom-taplink-wrapper .cta-manager:hover {
+    transform: translateY(-2px);
+}
+
+#custom-taplink-wrapper .cta-manager:active {
+    transform: scale(0.98);
+}
+
+#custom-taplink-wrapper .cta-manager::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 45px 45px 0;
+    border-color: transparent rgba(0, 0, 0, 0.15) transparent transparent; 
+    pointer-events: none;
+}
+
+#custom-taplink-wrapper .cta-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    position: relative;
+    z-index: 1;
+}
+
+#custom-taplink-wrapper .cta-subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.8;
+    position: relative;
+    z-index: 1;
+}
+
+/* Д. Встроенный YouTube плеер */
+#custom-taplink-wrapper .youtube-container {
+    width: 100%;
+    border-radius: 16px; 
+    border: 1px solid var(--btn-border);
+    overflow: hidden;
+    aspect-ratio: 16 / 9; 
+    display: block;
+    position: relative;
+    transition: border-color 0.4s;
+}
+
+#custom-taplink-wrapper .youtube-container:hover {
+    border-color: var(--text-main);
+}
+
+#custom-taplink-wrapper .youtube-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* Е. Подвал */
+#custom-taplink-wrapper .footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#custom-taplink-wrapper .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; 
+    border: 1px solid var(--btn-border);
+    background-color: transparent;
+    color: var(--text-main);
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+#custom-taplink-wrapper .social-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-main);
+    transition: fill 0.4s;
+}
+
+#custom-taplink-wrapper .social-icon:hover {
+    background-color: var(--text-main);
+    border-color: var(--text-main);
+    transform: translateY(-3px);
+}
+
+#custom-taplink-wrapper .social-icon:hover svg {
+    fill: var(--bg-color);
+}
