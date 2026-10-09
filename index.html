@@ -1,201 +1,382 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>LOCAL TEST BUSURMAN GROUP</title>
-</head>
-<body>
-    <div id="custom-taplink-wrapper">
-    <div class="taplink-container">
-        
-        <header class="header fade-in">
-            <img src="https://static.tildacdn.pro/tild6434-3236-4562-b536-383532643332/IMGP0996_resized-2.jpg" alt="Айдар Бусурман" class="avatar" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=A+B&background=1C243D&color=D7BE8A&size=150';">
-            <img src="https://i.ibb.co/vCCFmCLj/image.png" alt="AIDAR BUSURMAN" class="logo-img" onerror="this.onerror=null; this.src='https://placehold.co/400x100/1C243D/D7BE8A?text=AIDAR+BUSURMAN&font=Montserrat';">
-        </header>
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#1C243D"><title>Айдар Бусурман | Taplink</title><style>body{margin:0;background:#1C243D;}#custom-taplink-wrapper{max-width:500px;margin:0 auto;}</style></head><body><!-- AIDAR BUSURMAN / TAPLINK V10 / restored from v8 -->
+<!-- Вставьте этот код целиком в HTML-блок Taplink. -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-        <section class="fade-in" id="programs-section">
-            <a href="https://busurmangroup.kz/mk2" class="link-btn" target="_blank">
-                <svg class="btn-icon" viewBox="0 0 24 24"><path d="M3 3v18h18V3H3zm16 16H5V5h14v14zM7 7h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z"/></svg>
-                <div class="btn-content">
-                    <span class="btn-title">Мастер-класс</span>
-                    <span class="btn-subtitle">busurmangroup.kz/mk2</span>
-                </div>
-                <svg class="btn-arrow" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
-            </a>
-        </section>
+#custom-taplink-wrapper {
+  --aidar-bg:#1C243D;
+  --aidar-bg2:#222D49;
+  --aidar-card:#26324E;
+  --aidar-gold:#D7BE8A;
+  --aidar-gold-bright:#F0D9A6;
+  --aidar-muted:#A9A9AC;
+  --aidar-border:rgba(215,190,138,.24);
+  --aidar-ink:#152039;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  margin:0;
+  overflow-x:clip;
+  background:var(--aidar-bg);
+  color:var(--aidar-gold);
+  font-family:'Montserrat',sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+#custom-taplink-wrapper, #custom-taplink-wrapper * { box-sizing:border-box; font-family:'Montserrat',sans-serif !important; }
+#custom-taplink-wrapper a { color:inherit;text-decoration:none; }
+#custom-taplink-wrapper img,#custom-taplink-wrapper iframe {max-width:100%;}
+#custom-taplink-wrapper button,#custom-taplink-wrapper select { font:inherit; }
+#custom-taplink-wrapper button { cursor:pointer; }
+#custom-taplink-wrapper button:focus-visible,#custom-taplink-wrapper a:focus-visible,#custom-taplink-wrapper select:focus-visible { outline:2px solid var(--aidar-gold-bright);outline-offset:4px; }
+#custom-taplink-wrapper .aidar-page { width:100%;max-width:500px;min-width:0;margin:auto;min-height:100vh;padding:0 18px 142px;background:radial-gradient(circle at 50% 3%,rgba(215,190,138,.085),transparent 310px),var(--aidar-bg); }
+#custom-taplink-wrapper .aidar-hero { padding:22px 0 18px;text-align:center;position:relative; }
+#custom-taplink-wrapper .aidar-overline { display:flex;align-items:center;justify-content:center;gap:9px;text-transform:uppercase;letter-spacing:2.5px;font-size:9px;font-weight:700;opacity:.79; }
+#custom-taplink-wrapper .aidar-overline:before,#custom-taplink-wrapper .aidar-overline:after { content:"";width:19px;height:1px;background:var(--aidar-gold);opacity:.45; }
+#custom-taplink-wrapper .aidar-avatar-ring { margin:20px auto 15px; width:170px;height:170px; padding:5px;border:1px solid rgba(215,190,138,.62);border-radius:50%;position:relative; overflow:visible; }
+#custom-taplink-wrapper .aidar-avatar-ring:after {content:"";position:absolute;inset:-7px;border:1px solid rgba(215,190,138,.13);border-radius:50%;}
+#custom-taplink-wrapper .aidar-avatar {width:100%;height:100%;object-fit:cover;object-position:center center;border-radius:50%;display:block;position:relative;z-index:1;background:#202A42;}
+#custom-taplink-wrapper .aidar-avatar-fallback {position:absolute;inset:5px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#2D3C5D,#202A42);color:#F1DFC0;font-weight:700;font-size:34px;letter-spacing:3px;}
+#custom-taplink-wrapper .aidar-logo {display:block;max-width:235px;width:72%;max-height:84px;height:auto;object-fit:contain;margin:0 auto 6px;}
+#custom-taplink-wrapper .aidar-name {font-size:14px;text-transform:uppercase;font-weight:700;letter-spacing:3.1px;color:var(--aidar-gold-bright);margin:4px 0 0;}
+#custom-taplink-wrapper .aidar-hero-desc {max-width:290px;margin:11px auto 0;color:#c9bdaf;font-size:12px;line-height:1.75;}
+#custom-taplink-wrapper .aidar-nav {position:sticky;top:0;z-index:30;display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:7px;background:rgba(29,39,63,.95);border:1px solid var(--aidar-border);border-radius:16px;box-shadow:0 12px 30px rgba(7,12,24,.17);backdrop-filter:blur(15px);-webkit-backdrop-filter:blur(15px);}
+#custom-taplink-wrapper .aidar-nav a {padding:12px 5px;text-align:center;font-size:11px;font-weight:700;border-radius:10px;transition:background .2s,color .2s;white-space:nowrap;}
+#custom-taplink-wrapper .aidar-nav a:hover,#custom-taplink-wrapper .aidar-nav a.is-active {background:var(--aidar-gold);color:var(--aidar-ink);}
+#custom-taplink-wrapper .aidar-section {margin-top:37px;scroll-margin-top:85px;}
+#custom-taplink-wrapper .aidar-section-heading {display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:14px;}
+#custom-taplink-wrapper .aidar-section-kicker {font-size:10px;color:var(--aidar-muted);letter-spacing:2px;text-transform:uppercase;font-weight:600;margin:0 0 8px;}
+#custom-taplink-wrapper .aidar-section-title {color:#F1E2C4;font-size:21px;font-weight:700;letter-spacing:-.6px;line-height:1.25;margin:0;}
+#custom-taplink-wrapper .aidar-count {font-size:11px;color:#D0C3AE;border:1px solid var(--aidar-border);border-radius:50px;padding:7px 10px;white-space:nowrap;}
+#custom-taplink-wrapper .aidar-next {display:flex;align-items:center;gap:10px;padding:13px 14px;background:linear-gradient(100deg,rgba(215,190,138,.14),rgba(215,190,138,.055));border:1px solid rgba(215,190,138,.32);border-radius:13px;margin-top:21px;min-height:52px;}
+#custom-taplink-wrapper .aidar-next-dot {width:8px;height:8px;flex:0 0 8px;background:#B7D2B7;border-radius:50%;box-shadow:0 0 0 4px rgba(183,210,183,.1);}
+#custom-taplink-wrapper .aidar-next > span:not(.aidar-next-dot) {color:#D8D0C3;font-size:11px;line-height:1.65;flex:1;}
+#custom-taplink-wrapper .aidar-next strong {color:var(--aidar-gold-bright);font-weight:700;}
+#custom-taplink-wrapper .aidar-next svg {flex:0 0 15px;opacity:.8;}
+#custom-taplink-wrapper .aidar-filter-label {font-size:10px;color:#C9B999;font-weight:700;text-transform:uppercase;letter-spacing:1.3px;margin-bottom:10px;}
+#custom-taplink-wrapper .aidar-city-filters {display:flex;gap:8px;flex-wrap:wrap;}
+#custom-taplink-wrapper .aidar-filter {flex:1;min-width:80px;border:1px solid var(--aidar-border);border-radius:10px;padding:11px 7px;background:transparent;color:var(--aidar-gold);font-size:12px;font-weight:600;transition:all .2s;}
+#custom-taplink-wrapper .aidar-filter:hover,#custom-taplink-wrapper .aidar-filter[aria-pressed="true"] {background:var(--aidar-gold);color:var(--aidar-ink);border-color:var(--aidar-gold);}
+#custom-taplink-wrapper .aidar-program-dropdown {position:relative;margin-top:12px;}
+#custom-taplink-wrapper .aidar-program-trigger {width:100%;display:flex;align-items:center;gap:10px;padding:11px 12px;background:rgba(255,255,255,.035);border:1px solid var(--aidar-border);border-radius:11px;color:#F1E2C4;font-size:12px;font-weight:600;text-align:left;transition:border-color .2s,background .2s,box-shadow .2s;}
+#custom-taplink-wrapper .aidar-program-trigger:hover,#custom-taplink-wrapper .aidar-program-trigger[aria-expanded="true"] {background:rgba(255,255,255,.055);border-color:rgba(215,190,138,.48);box-shadow:0 10px 24px rgba(7,12,24,.18);}
+#custom-taplink-wrapper .aidar-program-trigger svg {width:16px;flex-shrink:0;opacity:.75;}
+#custom-taplink-wrapper .aidar-program-trigger-text {flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+#custom-taplink-wrapper .aidar-program-trigger-arrow {transition:transform .2s ease;}
+#custom-taplink-wrapper .aidar-program-trigger[aria-expanded="true"] .aidar-program-trigger-arrow {transform:rotate(180deg);}
+#custom-taplink-wrapper .aidar-program-menu {position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:40;padding:8px;background:#23304B;border:1px solid rgba(215,190,138,.35);border-radius:14px;box-shadow:0 18px 45px rgba(5,10,20,.35);display:flex;flex-direction:column;gap:4px;}
+#custom-taplink-wrapper .aidar-program-menu[hidden] {display:none;}
+#custom-taplink-wrapper .aidar-program-option {width:100%;border:0;background:transparent;border-radius:10px;padding:11px 12px;color:#EADABD;font-size:12px;font-weight:500;text-align:left;line-height:1.45;transition:background .18s,color .18s;}
+#custom-taplink-wrapper .aidar-program-option:hover,#custom-taplink-wrapper .aidar-program-option:focus-visible {background:rgba(215,190,138,.12);color:#F7E8C7;outline:none;}
+#custom-taplink-wrapper .aidar-program-option[aria-selected="true"] {background:var(--aidar-gold);color:var(--aidar-ink);font-weight:700;}
+#custom-taplink-wrapper .aidar-list {display:flex;flex-direction:column;gap:10px;margin-top:17px;}
+#custom-taplink-wrapper .aidar-year {display:flex;align-items:center;gap:15px;margin:17px 0 5px;}
+#custom-taplink-wrapper .aidar-year:before,#custom-taplink-wrapper .aidar-year:after {content:"";height:1px;background:linear-gradient(90deg,transparent,rgba(215,190,138,.45));flex:1;}
+#custom-taplink-wrapper .aidar-year:after {transform:rotate(180deg);}
+#custom-taplink-wrapper .aidar-year span {font-size:16px;letter-spacing:3px;font-weight:700;color:var(--aidar-gold-bright);}
+#custom-taplink-wrapper .aidar-month {font-size:11px;text-transform:uppercase;letter-spacing:1.8px;font-weight:700;margin:9px 0 2px;color:#C1B3A3;}
+#custom-taplink-wrapper .aidar-event {display:flex;align-items:center;min-height:105px;gap:13px;padding:13px 12px;background:var(--aidar-card);border:1px solid rgba(215,190,138,.16);border-radius:15px;transition:border-color .2s,transform .2s,background .2s;}
+#custom-taplink-wrapper .aidar-event:hover {border-color:rgba(215,190,138,.67);transform:translateY(-2px);background:#2A3755;}
+#custom-taplink-wrapper .aidar-event-date {flex:0 0 65px;min-width:65px;align-self:stretch;display:flex;align-items:center;justify-content:center;flex-direction:column;border-right:1px solid var(--aidar-border);padding-right:12px;}
+#custom-taplink-wrapper .aidar-event-day {font-size:27px;line-height:1.05;color:#F1DFC0;font-weight:700;letter-spacing:-1px;}
+#custom-taplink-wrapper .aidar-event-mon {font-size:10px;margin-top:5px;color:var(--aidar-muted);text-transform:uppercase;font-weight:700;letter-spacing:1px;}
+#custom-taplink-wrapper .aidar-event-range {font-size:12px;text-align:center;line-height:1.9;font-weight:700;color:#F1DFC0;white-space:nowrap;}
+#custom-taplink-wrapper .aidar-event-info {flex:1;min-width:0;display:flex;flex-direction:column;gap:6px;}
+#custom-taplink-wrapper .aidar-event-name {font-size:13px;font-weight:700;color:#F1E2C4;line-height:1.45;}
+#custom-taplink-wrapper .aidar-event-meta {display:flex;align-items:center;gap:9px;flex-wrap:wrap;color:#C1B9AE;font-size:10px;line-height:1.5;}
+#custom-taplink-wrapper .aidar-event-meta span {display:inline-flex;align-items:center;gap:4px;}
+#custom-taplink-wrapper .aidar-event-meta svg {width:12px;height:12px;}
+#custom-taplink-wrapper .aidar-event-action {font-size:10px;color:#E2C893;display:flex;align-items:center;gap:5px;font-weight:700;margin-top:2px;}
+#custom-taplink-wrapper .aidar-event-action svg {width:13px;height:13px;}
+#custom-taplink-wrapper .aidar-event-chevron {width:23px;height:23px;border:1px solid var(--aidar-border);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:0 0 23px;}
+#custom-taplink-wrapper .aidar-event-chevron svg {width:13px;height:13px;}
+#custom-taplink-wrapper .aidar-empty {border:1px dashed var(--aidar-border);border-radius:13px;padding:24px 16px;text-align:center;}
+#custom-taplink-wrapper .aidar-empty h3 {margin:0 0 9px;font-size:14px;color:#F1E2C4;}
+#custom-taplink-wrapper .aidar-empty p {margin:0 0 15px;color:#BFB5A6;font-size:11px;line-height:1.8;}
+#custom-taplink-wrapper .aidar-reset {background:var(--aidar-gold);border:0;border-radius:9px;padding:11px 14px;font-size:11px;font-weight:700;color:var(--aidar-ink);}
+#custom-taplink-wrapper .aidar-programs {display:flex;flex-direction:column;gap:10px;}
+#custom-taplink-wrapper .aidar-program-card {display:flex;align-items:center;gap:14px;padding:19px 17px;border-radius:14px;border:1px solid var(--aidar-border);background:linear-gradient(105deg,rgba(215,190,138,.075),transparent);transition:all .2s;}
+#custom-taplink-wrapper .aidar-program-card:hover {background:rgba(215,190,138,.12);border-color:rgba(215,190,138,.7);}
+#custom-taplink-wrapper .aidar-program-number {font-size:22px;color:rgba(215,190,138,.38);font-weight:700;letter-spacing:-1px;}
+#custom-taplink-wrapper .aidar-program-body {display:flex;flex-direction:column;gap:5px;flex:1;}
+#custom-taplink-wrapper .aidar-program-name {font-size:14px;font-weight:700;color:#F1E2C4;}
+#custom-taplink-wrapper .aidar-program-caption {font-size:10px;color:#BBAF9E;line-height:1.6;}
+#custom-taplink-wrapper .aidar-arrow-circle {display:flex;align-items:center;justify-content:center;width:30px;height:30px;border:1px solid var(--aidar-border);border-radius:50%;}
+#custom-taplink-wrapper .aidar-arrow-circle svg {width:16px;height:16px;}
+#custom-taplink-wrapper .aidar-video-grid {display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+#custom-taplink-wrapper .aidar-video {min-width:0;overflow:hidden;border:1px solid var(--aidar-border);border-radius:13px;background:#26324E;}
+#custom-taplink-wrapper .aidar-video-trigger {display:block;width:100%;border:0;background:transparent;color:inherit;text-align:left;padding:0;}
+#custom-taplink-wrapper .aidar-video-media {position:relative;display:block;aspect-ratio:16/10;background:linear-gradient(135deg,#3A4660,#101B33);overflow:hidden;}
+#custom-taplink-wrapper .aidar-video-media img {height:100%;width:100%;display:block;object-fit:cover;opacity:.8;}
+#custom-taplink-wrapper .aidar-video-play {position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);height:39px;width:39px;background:rgba(28,36,61,.85);border:1px solid rgba(255,255,255,.55);border-radius:50%;display:flex;align-items:center;justify-content:center;}
+#custom-taplink-wrapper .aidar-video-play svg {width:16px;height:16px;fill:#F1E2C4;stroke:none;margin-left:2px;}
+#custom-taplink-wrapper .aidar-video-title {display:block;padding:11px;font-size:10px;line-height:1.6;font-weight:600;min-height:68px;color:#E3D4B9;}
+#custom-taplink-wrapper #aidar-videos .aidar-section-heading,
+#custom-taplink-wrapper #aidar-programs .aidar-section-heading {justify-content:center;text-align:center;}
+#custom-taplink-wrapper #aidar-videos .aidar-section-heading > div,
+#custom-taplink-wrapper #aidar-programs .aidar-section-heading > div {width:100%;}
+#custom-taplink-wrapper #aidar-videos .aidar-video-title {text-align:center;}
+#custom-taplink-wrapper .aidar-video-player {width:100%;aspect-ratio:16/9;display:block;border:0;}
+#custom-taplink-wrapper .aidar-manager {margin-top:35px;padding:23px 20px;background:var(--aidar-gold);border-radius:16px;text-align:center;color:var(--aidar-ink);}
+#custom-taplink-wrapper .aidar-manager h2 {font-size:17px;font-weight:700;line-height:1.4;margin:0 0 9px;}
+#custom-taplink-wrapper .aidar-manager p {font-size:11px;line-height:1.85;opacity:.85;margin:0 0 17px;}
+#custom-taplink-wrapper .aidar-manager-btn {display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px 12px;border-radius:11px;background:var(--aidar-ink);color:var(--aidar-gold-bright)!important;font-size:12px;font-weight:700;}
+#custom-taplink-wrapper .aidar-manager-btn svg {height:18px;width:18px;}
+#custom-taplink-wrapper .aidar-whatsapp-icon {display:block;flex:0 0 auto;}
+#custom-taplink-wrapper .aidar-footer {display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:28px;padding:25px 0 0;border-top:1px solid var(--aidar-border);color:#D7BE8A;font-size:11px;line-height:1.5;}
+#custom-taplink-wrapper .aidar-social {display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid rgba(215,190,138,.4);padding:10px 13px;border-radius:10px;color:#F1E2C4!important;font-weight:600;white-space:nowrap;}
+#custom-taplink-wrapper .aidar-social svg {width:17px;height:17px;flex-shrink:0;}
+#custom-taplink-wrapper .aidar-bottom-cta {position:fixed;z-index:50;left:50%;bottom:calc(13px + env(safe-area-inset-bottom, 0px));transform:translateX(-50%);max-width:452px;width:calc(100vw - 30px);box-shadow:0 12px 40px rgba(0,0,0,.42);border:1px solid rgba(240,217,166,.7);background:var(--aidar-gold);color:var(--aidar-ink)!important;border-radius:13px;display:flex;align-items:center;justify-content:center;gap:10px;padding:15px 20px;font-size:12px;font-weight:700;}
+#custom-taplink-wrapper .aidar-bottom-cta svg {width:19px;height:19px;}
+#custom-taplink-wrapper .aidar-bottom-cta small {font-weight:600;opacity:.76;font-size:9px;}
+#custom-taplink-wrapper .aidar-bottom-cta .aidar-cta-stack {display:flex;flex-direction:column;gap:2px;}
+#custom-taplink-wrapper .aidar-bottom-cta .aidar-cta-arr {margin-left:auto;}
+#custom-taplink-wrapper .aidar-sr-only {position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden;}
+@media (max-width:380px){
+  #custom-taplink-wrapper .aidar-page {padding-left:13px;padding-right:13px;}
+  #custom-taplink-wrapper .aidar-section-title {font-size:19px;}
+  #custom-taplink-wrapper .aidar-event {gap:9px;padding:11px 9px;}
+  #custom-taplink-wrapper .aidar-event-date {flex-basis:59px;min-width:59px;padding-right:9px;}
+  #custom-taplink-wrapper .aidar-event-name {font-size:12px;}
+  #custom-taplink-wrapper .aidar-event-meta {gap:6px;font-size:9px;}
+  #custom-taplink-wrapper .aidar-video-grid {gap:9px;}
+}
+@media (prefers-reduced-motion:reduce){#custom-taplink-wrapper * {scroll-behavior:auto!important;transition:none!important;animation:none!important;}}
+</style>
 
-       <section class="fade-in">
-        <a href="https://busurmangroup.kz/bj2" class="link-btn" target="_blank">
-            <svg class="btn-icon" viewBox="0 0 24 24"><path d="M14 6l-3.75 5 2.85 3.8-1.6 1.2C9.81 13.75 7 10 7 10l-6 8h22L14 6z"/></svg>
-            <div class="btn-content">
-                <span class="btn-title">Батыр Жолы</span>
-                <span class="btn-subtitle">busurmangroup.kz/bj2</span>
-            </div>
+<div id="custom-taplink-wrapper">
+  <main class="aidar-page">
+    <header class="aidar-hero">
+      <div class="aidar-avatar-ring">
+        <span class="aidar-avatar-fallback" aria-hidden="true">АБ</span>
+        <img class="aidar-avatar" src="https://static.tildacdn.pro/tild6434-3236-4562-b536-383532643332/IMGP0996_resized-2.jpg" alt="Айдар Бусурман" loading="eager" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'">
+      </div>
+      <img class="aidar-logo" src="https://i.ibb.co/vCCFmCLj/image.png" alt="Логотип Айдара Бусурман" onerror="this.style.display='none'">
+    </header>
 
-            <svg class="btn-arrow" viewBox="0 0 24 24">
-                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
-            </svg>
-             </a>
-        </section>
+    <nav class="aidar-nav" aria-label="Разделы страницы">
+      <a href="#aidar-schedule" class="is-active">Расписание</a>
+      <a href="#aidar-programs">Программы</a>
+      <a href="#aidar-videos">Подкасты</a>
+    </nav>
 
-         <section class="fade-in">
-            <a href="https://busurmangroup.kz/bp" class="link-btn" target="_blank">
-                <svg class="btn-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-5.5l9-4.5-4.5 9-9 4.5 4.5-9zM12 10.9c-.61 0-1.1.49-1.1 1.1s.49 1.1 1.1 1.1 1.1-.49 1.1-1.1-.49-1.1-1.1-1.1z"/></svg>
-                <div class="btn-content">
-                    <span class="btn-title">PRO Life</span>
-                    <span class="btn-subtitle">busurmangroup.kz/bp</span>
-                </div>
-                <svg class="btn-arrow" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
-            </a>
-        </section>
+    <a class="aidar-next" id="aidar-next" href="https://wa.me/77009004747?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D1%82%D1%8C%20%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5." target="_blank" rel="noopener noreferrer" data-track="next_event">
+      <span class="aidar-next-dot"></span>
+      <span id="aidar-next-text">Актуальные даты мероприятий ниже</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
 
-        <section class="fade-in">
-    <h2 class="section-title">Ближайшие мероприятия</h2>
-    <div class="schedule-list">
+    <section class="aidar-section" id="aidar-schedule">
+      <div class="aidar-section-heading">
+        <div>
+          <p class="aidar-section-kicker">Выберите город и программу</p>
+          <h2 class="aidar-section-title">Расписание событий</h2>
+        </div>
+        <span class="aidar-count" id="aidar-count" aria-live="polite">9 событий</span>
+      </div>
 
-      <!-- АПРЕЛЬ -->
-<a href="#" class="schedule-item">
-    <div class="schedule-left">
-        <span class="schedule-date">09.04–12.04</span>
-        <span class="schedule-city">Уральск</span>
-    </div>
-    <div class="schedule-right">
-        <span class="schedule-event">PRO LIFE</span>
-        <span class="schedule-details">8:00–24:00</span>
-    </div>
-</a>
+      <div class="aidar-filter-label">Город проведения</div>
+      <div class="aidar-city-filters" role="group" aria-label="Фильтр по городу">
+        <button type="button" class="aidar-filter" data-city="all" aria-pressed="true">Все города</button>
+        <button type="button" class="aidar-filter" data-city="Астана" aria-pressed="false">Астана</button>
+        <button type="button" class="aidar-filter" data-city="Кипр" aria-pressed="false">Кипр</button>
+      </div>
+      <div class="aidar-program-dropdown" id="aidar-program-dropdown">
+        <button type="button" class="aidar-program-trigger" id="aidar-program-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="aidar-program-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M7 12h10m-7 5h4"/></svg>
+          <span class="aidar-program-trigger-text" id="aidar-program-trigger-text">Все программы</span>
+          <svg class="aidar-program-trigger-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="aidar-program-menu" id="aidar-program-menu" role="listbox" aria-label="Фильтр по программе" hidden>
+          <button type="button" class="aidar-program-option" data-program="all" role="option" aria-selected="true">Все программы</button>
+          <button type="button" class="aidar-program-option" data-program="Мастер-класс" role="option" aria-selected="false">Мастер-класс</button>
+          <button type="button" class="aidar-program-option" data-program="Интенсив" role="option" aria-selected="false">Интенсив «Точка решения»</button>
+          <button type="button" class="aidar-program-option" data-program="PRO LIFE" role="option" aria-selected="false">PRO LIFE</button>
+          <button type="button" class="aidar-program-option" data-program="BATYR JOLY" role="option" aria-selected="false">BATYR JOLY</button>
+        </div>
+      </div>
+      <div class="aidar-list" id="aidar-events" aria-live="polite"></div>
+    </section>
 
-<a href="#" class="schedule-item">
-    <div class="schedule-left">
-        <span class="schedule-date">15.04</span>
-        <span class="schedule-city">Астана</span>
-    </div>
-    <div class="schedule-right">
-        <span class="schedule-event">Мастер-класс</span>
-        <span class="schedule-details">3 часа</span>
-    </div>
-</a>
-
-<a href="#" class="schedule-item">
-    <div class="schedule-left">
-        <span class="schedule-date">23.04</span>
-        <span class="schedule-city">Астана</span>
-    </div>
-    <div class="schedule-right">
-        <span class="schedule-event">Мастер-класс</span>
-        <span class="schedule-details">3 часа</span>
-    </div>
-</a>
-
-<a href="#" class="schedule-item">
-    <div class="schedule-left">
-        <span class="schedule-date">29.04</span>
-        <span class="schedule-city">Кипр</span>
-    </div>
-    <div class="schedule-right">
-        <span class="schedule-event">Мастер-класс</span>
-        <span class="schedule-details">3 часа</span>
-    </div>
-</a>
-
-<a href="#" class="schedule-item">
-    <div class="schedule-left">
-        <span class="schedule-date">30.04–03.05</span>
-        <span class="schedule-city">Кипр</span>
-    </div>
-    <div class="schedule-right">
-        <span class="schedule-event">PRO LIFE</span>
-        <span class="schedule-details">8:00–24:00</span>
-    </div>
-</a>
-
-<!-- МАЙ -->
-<a href="#" class="schedule-item">
-    <div class="schedule-left">
-        <span class="schedule-date">22.05–24.05</span>
-        <span class="schedule-city">Кипр</span>
-    </div>
-    <div class="schedule-right">
-        <span class="schedule-event">BATYR JOLY</span>
-        <span class="schedule-details">3 дня</span>
-    </div>
-</a>
-
-<!-- ИЮНЬ -->
-<a href="#" class="schedule-item">
-    <div class="schedule-left">
-        <span class="schedule-date">05.06–07.06</span>
-        <span class="schedule-city">Астана</span>
-    </div>
-    <div class="schedule-right">
-        <span class="schedule-event">BATYR JOLY</span>
-        <span class="schedule-details">3 дня</span>
-    </div>
-</a>
-
-<a href="#" class="schedule-item">
-    <div class="schedule-left">
-        <span class="schedule-date">12.06–14.06</span>
-        <span class="schedule-city">Уральск</span>
-    </div>
-    <div class="schedule-right">
-        <span class="schedule-event">BATYR JOLY</span>
-        <span class="schedule-details">3 дня</span>
-    </div>
-</a>
-
-<!-- ИЮЛЬ -->
-<a href="#" class="schedule-item">
-    <div class="schedule-left">
-        <span class="schedule-date">16.07–19.07</span>
-        <span class="schedule-city">Астана</span>
-    </div>
-    <div class="schedule-right">
-        <span class="schedule-event">PRO LIFE</span>
-        <span class="schedule-details">4 дня</span>
-    </div>
-</a>
-
-<!-- СЕНТЯБРЬ -->
-<a href="#" class="schedule-item">
-    <div class="schedule-left">
-        <span class="schedule-date">25.09–27.09</span>
-        <span class="schedule-city">Чикаго</span>
-    </div>
-    <div class="schedule-right">
-        <span class="schedule-event">PRO LIFE</span>
-        <span class="schedule-details">3 дня</span>
-    </div>
-</a>
-        <a href="https://wa.me/77009003939?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BF%D0%B8%D1%88%D1%83%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83%20%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D0%B9" class="cta-manager fade-in" target="_blank">
-         <span class="cta-title">Связаться с менеджером</span>
-         <span class="cta-subtitle">по вопросам мероприятий и условий</span>
+    <section class="aidar-section" id="aidar-programs">
+      <div class="aidar-section-heading"><div><p class="aidar-section-kicker">Подробнее о направлениях</p><h2 class="aidar-section-title">Наши программы</h2></div></div>
+      <div class="aidar-programs">
+        <a class="aidar-program-card" href="https://busurmangroup.kz/mk2" target="_blank" rel="noopener noreferrer" data-track="program_masterclass">
+          <span class="aidar-program-number">01</span><span class="aidar-program-body"><span class="aidar-program-name">Мастер-класс</span><span class="aidar-program-caption">Открыть страницу мастер-класса</span></span><span class="aidar-arrow-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </a>
-        <!--
-        <section class="fade-in">
-            <h2 class="section-title">Наш YouTube-подкаст</h2>
-            <div class="youtube-container">
-                <iframe 
-                    src="https://www.youtube.com/embed/RBFeF1tbPjs?playsinline=1&rel=0&modestbranding=1" 
-                    title="YouTube video player" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </section>
--->
-        <footer class="footer fade-in">
-            <a href="https://www.instagram.com/aidar_busurman/" class="social-icon" target="_blank" aria-label="Instagram">
-                <svg viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-                </svg>
-            </a>
-        </footer>
-    </div>
-</div>    
-</body>
-<script src="js/script.js"></script>
-</html>
+        <a class="aidar-program-card" href="https://busurmangroup.kz/bj2" target="_blank" rel="noopener noreferrer" data-track="program_batyr_joly">
+          <span class="aidar-program-number">02</span><span class="aidar-program-body"><span class="aidar-program-name">Batyr Joly</span><span class="aidar-program-caption">Открыть страницу программы</span></span><span class="aidar-arrow-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </a>
+        <a class="aidar-program-card" href="https://busurmangroup.kz/bp" target="_blank" rel="noopener noreferrer" data-track="program_prolife">
+          <span class="aidar-program-number">03</span><span class="aidar-program-body"><span class="aidar-program-name">PRO LIFE</span><span class="aidar-program-caption">Открыть страницу тренинга</span></span><span class="aidar-arrow-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </a>
+      </div>
+    </section>
 
+    <section class="aidar-section" id="aidar-videos">
+      <div class="aidar-section-heading"><div><p class="aidar-section-kicker">Смотрите и знакомьтесь</p><h2 class="aidar-section-title">Подкасты и видео</h2></div></div>
+      <div class="aidar-video-grid" id="aidar-video-grid">
+        <div class="aidar-video"><a class="aidar-video-trigger" href="https://www.youtube.com/watch?v=xIfMrG273Wk" target="_blank" rel="noopener noreferrer" data-track="video_1" aria-label="Смотреть: Иллюзии, тестостерон и духовность"><span class="aidar-video-media"><img src="https://i.ytimg.com/vi/xIfMrG273Wk/hqdefault.jpg" alt="Обложка подкаста" loading="lazy"><span class="aidar-video-play"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span></span><span class="aidar-video-title">Иллюзии, тестостерон и духовность: как найти предназначение</span></a></div>
+        <div class="aidar-video"><a class="aidar-video-trigger" href="https://www.youtube.com/watch?v=1BqN_klBB_k" target="_blank" rel="noopener noreferrer" data-track="video_2" aria-label="Смотреть YouTube-подкаст"><span class="aidar-video-media"><img src="https://i.ytimg.com/vi/1BqN_klBB_k/hqdefault.jpg" alt="Обложка YouTube-подкаста" loading="lazy"><span class="aidar-video-play"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span></span><span class="aidar-video-title">Наш YouTube-подкаст</span></a></div>
+        <div class="aidar-video"><a class="aidar-video-trigger" href="https://www.youtube.com/watch?v=zLg0f9KWCe0" target="_blank" rel="noopener noreferrer" data-track="video_3" aria-label="Смотреть подкаст про Batyr Pro"><span class="aidar-video-media"><img src="https://i.ytimg.com/vi/zLg0f9KWCe0/hqdefault.jpg" alt="Обложка подкаста Batyr Pro" loading="lazy"><span class="aidar-video-play"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span></span><span class="aidar-video-title">Подкаст про футбольный клуб Batyr Pro</span></a></div>
+        <div class="aidar-video"><a class="aidar-video-trigger" href="https://www.youtube.com/watch?v=FK0ERKv-suo" target="_blank" rel="noopener noreferrer" data-track="video_4" aria-label="Смотреть подкаст QazMountains"><span class="aidar-video-media"><img src="https://i.ytimg.com/vi/FK0ERKv-suo/hqdefault.jpg" alt="Обложка подкаста QazMountains" loading="lazy"><span class="aidar-video-play"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span></span><span class="aidar-video-title">Подкаст про горный клуб QazMountains</span></a></div>
+      </div>
+    </section>
+
+    <section class="aidar-manager" id="aidar-contact">
+      <h2>Нужна помощь с выбором?</h2>
+      <p>Напишите менеджеру в WhatsApp, чтобы уточнить детали мероприятия и условия участия.</p>
+      <a class="aidar-manager-btn" href="https://wa.me/77009004747?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D1%82%D1%8C%20%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D0%B5." target="_blank" rel="noopener noreferrer" data-track="manager_whatsapp"><svg class="aidar-whatsapp-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.601 2.326A7.854 7.854 0 0 0 8 .002a7.944 7.944 0 0 0-6.808 12.074L0 16l4.03-1.057A7.9 7.9 0 0 0 8 16h.003a7.935 7.935 0 0 0 5.598-13.674M8 14.5a6.46 6.46 0 0 1-3.292-.902l-.236-.14-2.39.627.638-2.33-.154-.24A6.473 6.473 0 0 1 8 1.5a6.47 6.47 0 0 1 4.59 11.04A6.47 6.47 0 0 1 8 14.5m3.665-4.65c-.2-.1-1.183-.584-1.367-.65-.183-.066-.316-.1-.45.1-.133.2-.516.65-.633.784-.116.133-.233.15-.433.05-.2-.1-.844-.31-1.608-.99-.595-.53-.998-1.185-1.115-1.385-.116-.2-.012-.308.088-.408.09-.088.2-.233.3-.35.1-.117.133-.2.2-.333.066-.133.033-.25-.017-.35-.05-.1-.45-1.083-.616-1.483-.161-.387-.325-.335-.45-.341q-.174-.008-.375-.008a.72.72 0 0 0-.525.249c-.183.2-.7.683-.7 1.666s.716 1.933.816 2.066c.1.133 1.41 2.153 3.419 3.019.477.206.85.329 1.14.421.479.152.817.131 1.124.08.343-.051 1.183-.483 1.35-.95.166-.466.166-.866.116-.949-.05-.084-.183-.133-.383-.233z"/></svg>Написать в WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    </section>
+    <footer class="aidar-footer"><span>© Айдар Бусурман</span><a class="aidar-social" href="https://www.instagram.com/aidar_busurman/" target="_blank" rel="noopener noreferrer" data-track="instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a></footer>
+  </main>
+  <a class="aidar-bottom-cta" href="https://wa.me/77009004747?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D1%82%D1%8C%20%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D0%B5." target="_blank" rel="noopener noreferrer" data-track="sticky_whatsapp" aria-label="Написать менеджеру в WhatsApp"><svg class="aidar-whatsapp-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.601 2.326A7.854 7.854 0 0 0 8 .002a7.944 7.944 0 0 0-6.808 12.074L0 16l4.03-1.057A7.9 7.9 0 0 0 8 16h.003a7.935 7.935 0 0 0 5.598-13.674M8 14.5a6.46 6.46 0 0 1-3.292-.902l-.236-.14-2.39.627.638-2.33-.154-.24A6.473 6.473 0 0 1 8 1.5a6.47 6.47 0 0 1 4.59 11.04A6.47 6.47 0 0 1 8 14.5m3.665-4.65c-.2-.1-1.183-.584-1.367-.65-.183-.066-.316-.1-.45.1-.133.2-.516.65-.633.784-.116.133-.233.15-.433.05-.2-.1-.844-.31-1.608-.99-.595-.53-.998-1.185-1.115-1.385-.116-.2-.012-.308.088-.408.09-.088.2-.233.3-.35.1-.117.133-.2.2-.333.066-.133.033-.25-.017-.35-.05-.1-.45-1.083-.616-1.483-.161-.387-.325-.335-.45-.341q-.174-.008-.375-.008a.72.72 0 0 0-.525.249c-.183.2-.7.683-.7 1.666s.716 1.933.816 2.066c.1.133 1.41 2.153 3.419 3.019.477.206.85.329 1.14.421.479.152.817.131 1.124.08.343-.051 1.183-.483 1.35-.95.166-.466.166-.866.116-.949-.05-.084-.183-.133-.383-.233z"/></svg><span class="aidar-cta-stack"><span>Написать менеджеру</span><small>WhatsApp · уточнить участие</small></span><svg class="aidar-cta-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var wrapper = document.getElementById('custom-taplink-wrapper');
+  if (!wrapper || wrapper.dataset.initialized === 'true') return;
+  wrapper.dataset.initialized = 'true';
+
+  // Все мероприятия перенесены из исходного Taplink без изменения дат и ссылок.
+  // Чтобы добавить событие, скопируйте объект и укажите start/end в YYYY-MM-DD.
+  var events = [
+    { start:'2026-10-10', end:'2026-10-10', city:'Астана', type:'Интенсив', name:'Интенсив «Точка решения»', duration:'5 часов', href:'https://wa.me/77009004747?text=Здравствуйте!%20Хочу%20узнать%20подробнее%20об%20интенсиве%2010.10%20в%20Астане.' },
+    { start:'2026-10-22', end:'2026-10-22', city:'Астана', type:'Мастер-класс', name:'Мастер-класс', duration:'3 часа', href:'https://wa.me/77009004747?text=Здравствуйте!%20Хочу%20узнать%20подробнее%20о%20мастер-классе%2022.10%20в%20Астане.' },
+    { start:'2026-10-29', end:'2026-11-01', city:'Кипр', type:'PRO LIFE', name:'Тренинг PRO LIFE', duration:'3 дня', href:'https://wa.me/77009004747?text=Здравствуйте!%20Хочу%20узнать%20подробнее%20о%20PRO%20LIFE%2029.10-01.11%20на%20Кипре.' },
+    { start:'2026-11-03', end:'2026-11-03', city:'Астана', type:'Мастер-класс', name:'Мастер-класс', duration:'3 часа', href:'https://wa.me/77009004747?text=Здравствуйте!%20Хочу%20узнать%20подробнее%20о%20мастер-классе%2003.11%20в%20Астане.' },
+    { start:'2026-11-05', end:'2026-11-08', city:'Астана', type:'PRO LIFE', name:'Тренинг PRO LIFE', duration:'4 дня', href:'https://wa.me/77009004747?text=Здравствуйте!%20Хочу%20узнать%20подробнее%20о%20PRO%20LIFE%2005-08.11%20в%20Астане.' },
+    { start:'2026-11-17', end:'2026-11-17', city:'Кипр', type:'Мастер-класс', name:'Мастер-класс', duration:'3 часа', href:'https://wa.me/77009004747?text=Здравствуйте!%20Хочу%20узнать%20подробнее%20о%20мастер-классе%2017.11%20на%20Кипре.' },
+    { start:'2026-11-19', end:'2026-11-22', city:'Кипр', type:'PRO LIFE', name:'Тренинг PRO LIFE', duration:'4 дня', href:'https://wa.me/77009004747?text=Здравствуйте!%20Хочу%20узнать%20подробнее%20о%20PRO%20LIFE%2019-22.11%20на%20Кипре.' },
+    { start:'2027-01-29', end:'2027-01-31', city:'Астана', type:'BATYR JOLY', name:'BATYR JOLY', duration:'3 дня', href:'https://wa.me/77009004747?text=Здравствуйте!%20Хочу%20узнать%20подробнее%20о%20BATYR%20JOLY%2029-31.01.2027%20в%20Астане.' },
+    { start:'2027-02-11', end:'2027-02-14', city:'Астана', type:'PRO LIFE', name:'Тренинг PRO LIFE', duration:'4 дня', href:'https://wa.me/77009004747?text=Здравствуйте!%20Хочу%20узнать%20подробнее%20о%20PRO%20LIFE%2011-14.02.2027%20в%20Астане.' }
+  ];
+  var selectedCity='all';
+  var selectedProgram='all';
+  var list=wrapper.querySelector('#aidar-events');
+  var counter=wrapper.querySelector('#aidar-count');
+  var next=wrapper.querySelector('#aidar-next');
+  var nextText=wrapper.querySelector('#aidar-next-text');
+  var m=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
+  var months=['январь','февраль','март','апрель','май','июнь','июль','август','сентябрь','октябрь','ноябрь','декабрь'];
+  function parseDate(value) { var p=value.split('-'); return new Date(+p[0],+p[1]-1,+p[2]); }
+  function dateText(value) { var p=value.split('-');return +p[2]+' '+m[+p[1]-1]; }
+  function escapeHTML(value) { return String(value).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+  function futureEvents() {var now=new Date();now.setHours(0,0,0,0);return events.filter(function(e){return parseDate(e.end)>=now;});}
+  function render() {
+    var upcoming=futureEvents();
+    var filtered=upcoming.filter(function(e){return (selectedCity==='all'||e.city===selectedCity)&&(selectedProgram==='all'||e.type===selectedProgram);});
+    counter.textContent=filtered.length+' '+(filtered.length%10===1 && filtered.length%100!==11?'событие':(filtered.length%10>=2&&filtered.length%10<=4&&(filtered.length%100<12||filtered.length%100>14)?'события':'событий'));
+    if (upcoming.length) {
+      var nearest=upcoming[0];
+      next.href=nearest.href;
+      nextText.innerHTML='<strong>Ближайшее: '+escapeHTML(dateText(nearest.start))+' · '+escapeHTML(nearest.city)+'</strong><br>'+escapeHTML(nearest.name);
+    } else {
+      next.href='https://wa.me/77009004747?text='+encodeURIComponent('Здравствуйте! Хочу узнать актуальное расписание мероприятий.');
+      nextText.innerHTML='<strong>Новое расписание уточняется</strong><br>Напишите менеджеру, чтобы узнать даты';
+    }
+    if (!filtered.length) {
+      list.innerHTML='<div class="aidar-empty"><h3>'+(upcoming.length?'По выбранным фильтрам событий нет':'Актуальное расписание уточняется')+'</h3><p>'+(upcoming.length?'Попробуйте выбрать другой город или программу.':'Уточните ближайшие даты у менеджера в WhatsApp.')+'</p><button type="button" class="aidar-reset" id="aidar-reset">'+(upcoming.length?'Сбросить фильтры':'Показать все фильтры')+'</button></div>';
+      var reset=wrapper.querySelector('#aidar-reset');
+      if(reset)reset.addEventListener('click',function(){selectedCity='all';selectedProgram='all';setProgramSelection('all');wrapper.querySelectorAll('[data-city]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.city==='all'));});updateSchedule();});
+      return;
+    }
+    var year='',month='',html='';
+    filtered.forEach(function(e){
+      var parts=e.start.split('-'),y=parts[0],mo=+parts[1]-1,startParts=e.start.split('-'),endParts=e.end.split('-');
+      if(y!==year){year=y;month='';html+='<div class="aidar-year"><span>'+y+'</span></div>';}
+      if(e.start.slice(0,7)!==month){month=e.start.slice(0,7);html+='<div class="aidar-month">'+months[mo]+'</div>';}
+      var ranged=e.start!==e.end;
+      var when=ranged?'<span class="aidar-event-range">'+escapeHTML(dateText(e.start))+'<br>– '+escapeHTML(dateText(e.end))+'</span>':'<span class="aidar-event-day">'+(+startParts[2])+'</span><span class="aidar-event-mon">'+m[mo]+'</span>';
+      html+='<a class="aidar-event" href="'+escapeHTML(e.href)+'" target="_blank" rel="noopener noreferrer" data-track="event_whatsapp" data-event="'+escapeHTML(e.type)+'" data-event-city="'+escapeHTML(e.city)+'" data-event-date="'+escapeHTML(e.start)+'" aria-label="'+escapeHTML(e.name+', '+e.city+', '+e.start+', WhatsApp')+'">'+
+        '<span class="aidar-event-date">'+when+'</span>'+
+        '<span class="aidar-event-info"><span class="aidar-event-name">'+escapeHTML(e.name)+'</span><span class="aidar-event-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>'+escapeHTML(e.city)+'</span><span>· '+escapeHTML(e.duration)+'</span></span><span class="aidar-event-action">Узнать подробности <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></span>'+
+        '<span class="aidar-event-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 18 6-6-6-6"/></svg></span></a>';
+    });
+    list.innerHTML=html;
+  }
+  // Soft transition when filters change. Native Web Animations API; no delayed list rendering.
+  var filterAnimation=null;
+  function updateSchedule() {
+    var from=list.getBoundingClientRect().height;
+    if(filterAnimation) filterAnimation.cancel();
+    list.style.overflow='';
+    render();
+    if(!list.animate || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
+    var to=list.getBoundingClientRect().height;
+    list.style.overflow='hidden';
+    filterAnimation=list.animate([{height:from+'px',opacity:.55},{height:to+'px',opacity:1}],{duration:230,easing:'ease-out'});
+    var thisAnimation=filterAnimation;
+    thisAnimation.onfinish=function(){if(filterAnimation===thisAnimation){list.style.overflow='';filterAnimation=null;}};
+    thisAnimation.oncancel=function(){if(filterAnimation===thisAnimation){list.style.overflow='';filterAnimation=null;}};
+  }
+  var programDropdown = wrapper.querySelector('#aidar-program-dropdown');
+  var programTrigger = wrapper.querySelector('#aidar-program-trigger');
+  var programTriggerText = wrapper.querySelector('#aidar-program-trigger-text');
+  var programMenu = wrapper.querySelector('#aidar-program-menu');
+  var programOptions = wrapper.querySelectorAll('.aidar-program-option');
+  function setProgramSelection(value) {
+    selectedProgram = value;
+    programOptions.forEach(function(option){
+      var isSelected = option.dataset.program === value;
+      option.setAttribute('aria-selected', String(isSelected));
+      if (isSelected) programTriggerText.textContent = option.textContent;
+    });
+  }
+  function closeProgramMenu() {
+    programMenu.hidden = true;
+    programTrigger.setAttribute('aria-expanded','false');
+  }
+  function openProgramMenu() {
+    programMenu.hidden = false;
+    programTrigger.setAttribute('aria-expanded','true');
+  }
+  programTrigger.addEventListener('click', function(){
+    if (programMenu.hidden) openProgramMenu(); else closeProgramMenu();
+  });
+  programOptions.forEach(function(option){
+    option.addEventListener('click', function(){
+      setProgramSelection(option.dataset.program);
+      closeProgramMenu();
+      updateSchedule();
+    });
+  });
+  document.addEventListener('click', function(e){
+    if (!programDropdown.contains(e.target)) closeProgramMenu();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeProgramMenu();
+  });
+  wrapper.querySelectorAll('[data-city]').forEach(function(button){button.addEventListener('click',function(){selectedCity=button.dataset.city;wrapper.querySelectorAll('[data-city]').forEach(function(el){el.setAttribute('aria-pressed',String(el===button));});updateSchedule();});});
+  setProgramSelection('all');
+  // Плавный переход к разделам; учитываем закрепленную навигацию
+  // (отступ секций задается существующим scroll-margin-top: 85px).
+  wrapper.querySelectorAll('.aidar-nav a').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      var section = id && id.charAt(0)==='#' ? wrapper.querySelector(id) : null;
+      if (!section) return;
+      e.preventDefault();
+      wrapper.querySelectorAll('.aidar-nav a').forEach(function(n){n.classList.remove('is-active');});
+      a.classList.add('is-active');
+      var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      section.scrollIntoView({ behavior:reduceMotion ? 'auto' : 'smooth', block:'start' });
+    });
+  });
+  // Интеграция с аналитикой: после подключения счётчика укажите его ID в window.AIDAR_METRIKA_ID.
+  // Здесь не используется внешний сервер и не собираются персональные данные.
+  function sendAnalytics(eventName, target) {
+    if (!eventName) return;
+    var params={event_category:'aidar_taplink'};
+    if(target && target.dataset.event) params.event_type=target.dataset.event;
+    if(target && target.dataset.eventCity) params.event_city=target.dataset.eventCity;
+    if(target && target.dataset.eventDate) params.event_date=target.dataset.eventDate;
+    if(window.AIDAR_METRIKA_ID && typeof window.ym==='function') {try{window.ym(window.AIDAR_METRIKA_ID,'reachGoal',eventName,params);}catch(err){}}
+    if(typeof window.gtag==='function') {try{window.gtag('event',eventName,params);}catch(err){}}
+  }
+  wrapper.addEventListener('click',function(e){var target=e.target.closest('[data-track]');if(!target||!wrapper.contains(target))return;sendAnalytics(target.getAttribute('data-track'),target);});
+  render();
+})();
+</script>
+</body></html>
